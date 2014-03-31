@@ -446,7 +446,7 @@ module.exports = function (grunt) {
     'jst:dev',
     'less:dev',
     'sass:dev',
-    'copy:dev',    
+    'copy:dev',
     'coffee:dev'
   ]);
 

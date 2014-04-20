@@ -12,6 +12,19 @@ body {
 	position: relative;
 }
 
+.navbar, 
+.navbar-nav li a {
+	.navbar-brand {
+		font-family: comfortaa, sans-serif;
+	}
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	padding-top: $navbar-height;
+}
+
 #home {
 	text-align: center;
 

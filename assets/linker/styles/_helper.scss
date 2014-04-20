@@ -1,6 +1,10 @@
 .full-screen {
 	min-height: 100%;
 	min-width: 100%;
+	position: relative;
+}
+
+.full-screen .full-screen {
 	position: absolute;
 }
 

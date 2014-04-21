@@ -15,11 +15,15 @@
 	padding-top: $navbar-height;
 	padding-bottom: $navbar-height;
 	border-top: 1px solid black;
-	border-bottom: 1px solid black;
 }
 
 .absolute-center {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.btn-github {
+	background-color: hsl(0, 5%, 9%);
+	color: white;
 }

@@ -3,6 +3,9 @@
 @import "vendor/font-awesome/font-awesome";
 @import "helper";
 
+$blue: hsl(180, 100%, 30%);
+$orange: hsl(35, 100%, 65%);
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -10,19 +13,29 @@ html, body {
 
 body {
 	position: relative;
+	font-family: ubuntu, sans-serif;
 }
 
-.navbar, 
-.navbar-nav li a {
+.navbar {
 	.navbar-brand {
 		font-family: comfortaa, sans-serif;
+	}
+
+	.navbar-nav li a {
+		font-family: open-sans-condensed, sans-serif;
+		font-size: 130%;
+		letter-spacing: 1px;	
 	}
 }
 
 main {
 	height: 100%;
 	width: 100%;
-	padding-top: $navbar-height;
+}
+
+h1 {
+	font-family: comfortaa, sans-serif;
+	font-weight: 100;
 }
 
 #home {
@@ -48,30 +61,47 @@ main {
 		background-color: hsla(180, 100%, 30%, 0.7);
 	}
 
-	hgroup {
+	.hgroup {
 		position: absolute;
 		top: 35%;
 		padding: 0;
+		width: 100%;
 
 		h1 {
 			color: hsl(180, 100%, 13%);
-			font-family: comfortaa, sans-serif;
 			font-size: 6em;
-			font-weight: 100;
+			margin: 0 auto;
 		}
 
 		h2 {
-			color: hsl(35, 100%, 65%);
+			color: $orange;
 			font-family: open-sans-condensed, sans-serif;
 			font-size: 3em;
+			margin: 0 auto;
 		}
 	}
 
-	i {
+	.next {
 		position: absolute;
-		bottom: 50px;
-		font-size: 4em;
-		color: white;
-		font-weight: 100;
+		bottom: 5%;
+		width: 100%;
+
+		a {
+			margin: 0 auto;
+			font-size: 4em;
+			font-weight: 100;
+		}
 	}
+}
+
+#about {
+	background-color: $orange;
+
+	.aboutMe {
+		padding-top: 10em;
+	}
+}
+
+#experience {
+	background-color: $blue;
 }
